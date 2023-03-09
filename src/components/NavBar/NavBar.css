@@ -1,0 +1,31 @@
+nav{
+  display: flex;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightblue;
+  padding: 15px;
+  background-color: lightblue;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+a:hover{
+  background-color: rgb(150, 172, 180);
+}
