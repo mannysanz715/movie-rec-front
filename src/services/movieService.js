@@ -1,6 +1,6 @@
 import * as tokenService from './tokenService'
-
-const BASE_URL = `${process.env.REACT_APP_BACK_END_SERVER_URL}/api/movieList`
+const REACT_APP_BACK_END_SERVER_URL='https://movie-rec-backend.fly.dev'
+const BASE_URL = `${REACT_APP_BACK_END_SERVER_URL}/api/movieList`
 
 async function getMovieRec(genre){
   try {
