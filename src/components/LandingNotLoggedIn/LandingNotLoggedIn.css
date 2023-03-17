@@ -1,0 +1,33 @@
+.blank-movie-img{
+  width: 320px;
+}
+
+.page-title{
+  color: var(--red-color);
+  font-size: 82px;
+  margin: 30px;
+  padding: 0;
+  font-weight: 400;
+}
+
+.not-logged-in-landing-page{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.landing-page-info{
+  font-size:32px;
+  width: 1000px;
+  text-align: center;
+}
+
+.not-logged-in-landing-page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}

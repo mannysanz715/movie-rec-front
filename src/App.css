@@ -13,3 +13,7 @@ main{
   background-color:var(--white-color);
   height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */}

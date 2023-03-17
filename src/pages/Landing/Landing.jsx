@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './Landing.module.css'
 import MovingShowing from '../../components/MovieShowing/MovieShowing'
 import * as movieService  from '../../services/movieService'
+import LandingNotLoggedIn from '../../components/LandingNotLoggedIn/LandingNotLoggedIn'
 function Landing({ user }){
   const [movieRec, setMovieRec] = useState({})
   const [genre, setGenre] = useState('')
@@ -51,7 +52,7 @@ function Landing({ user }){
           <button onClick={handleMovieRequest} id='10752'>War</button>
           <button onClick={handleMovieRequest} id='37'>Western</button>
         </div>
-      </> : '' }
+      </> : <LandingNotLoggedIn />}
       <MovingShowing movie={movieRec} genre={genre}/>
     </main>
   )
