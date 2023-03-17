@@ -27,29 +27,31 @@ function Landing({ user }){
   
   return (
     <main className={styles.container}>
-      <h3>What the fuck do I watch tonight??</h3>
-      <h5>Pick a fucken genre</h5>
-      <div className='movie-genre-buttons'>
-        <button onClick={handleMovieRequest} id='27'>Horror</button>
-        <button onClick={handleMovieRequest} id='28'>Action</button>
-        <button onClick={handleMovieRequest} id='12'>Adventure</button>
-        <button onClick={handleMovieRequest} id='16'>Annimation</button>
-        <button onClick={handleMovieRequest} id='35'>Comedy</button>
-        <button onClick={handleMovieRequest} id='80'>Crime</button>
-        <button onClick={handleMovieRequest} id='99'>Documentary</button>
-        <button onClick={handleMovieRequest} id='18'>Drama</button>
-        <button onClick={handleMovieRequest} id='10751'>Family</button>
-        <button onClick={handleMovieRequest} id='14'>Fantasy</button>
-        <button onClick={handleMovieRequest} id='36'>History</button>
-        <button onClick={handleMovieRequest} id='10402'>Music</button>
-        <button onClick={handleMovieRequest} id='9648'>Mystery</button>
-        <button onClick={handleMovieRequest} id='10749'>Romance</button>
-        <button onClick={handleMovieRequest} id='878'>Sci Fi</button>
-        <button onClick={handleMovieRequest} id='10770'>TV Movie</button>
-        <button onClick={handleMovieRequest} id='53'>Thriller</button>
-        <button onClick={handleMovieRequest} id='10752'>War</button>
-        <button onClick={handleMovieRequest} id='37'>Western</button>
-      </div>
+      { user? <>
+        <h3>What the fuck do I watch tonight??</h3>
+        <h5>Pick a fucken genre</h5>
+        <div className='movie-genre-buttons'>
+          <button onClick={handleMovieRequest} id='27'>Horror</button>
+          <button onClick={handleMovieRequest} id='28'>Action</button>
+          <button onClick={handleMovieRequest} id='12'>Adventure</button>
+          <button onClick={handleMovieRequest} id='16'>Annimation</button>
+          <button onClick={handleMovieRequest} id='35'>Comedy</button>
+          <button onClick={handleMovieRequest} id='80'>Crime</button>
+          <button onClick={handleMovieRequest} id='99'>Documentary</button>
+          <button onClick={handleMovieRequest} id='18'>Drama</button>
+          <button onClick={handleMovieRequest} id='10751'>Family</button>
+          <button onClick={handleMovieRequest} id='14'>Fantasy</button>
+          <button onClick={handleMovieRequest} id='36'>History</button>
+          <button onClick={handleMovieRequest} id='10402'>Music</button>
+          <button onClick={handleMovieRequest} id='9648'>Mystery</button>
+          <button onClick={handleMovieRequest} id='10749'>Romance</button>
+          <button onClick={handleMovieRequest} id='878'>Sci Fi</button>
+          <button onClick={handleMovieRequest} id='10770'>TV Movie</button>
+          <button onClick={handleMovieRequest} id='53'>Thriller</button>
+          <button onClick={handleMovieRequest} id='10752'>War</button>
+          <button onClick={handleMovieRequest} id='37'>Western</button>
+        </div>
+      </> : '' }
       <MovingShowing movie={movieRec} genre={genre}/>
     </main>
   )
