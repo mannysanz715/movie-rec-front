@@ -28,8 +28,8 @@ function Landing({ user }){
   return (
     <main className={styles.container}>
       { user? <>
-        <h3>What the fuck do I watch tonight??</h3>
-        <h5>Pick a fucken genre</h5>
+        <h3>What do I watch tonight?</h3>
+        <h5>Pick a genre</h5>
         <div className='movie-genre-buttons'>
           <button onClick={handleMovieRequest} id='27'>Horror</button>
           <button onClick={handleMovieRequest} id='28'>Action</button>

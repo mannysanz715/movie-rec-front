@@ -1,0 +1,15 @@
+:root{
+  --purple-color: #3A2E39;
+  --green-color:  #4E6E58;
+  --white-color:  #F8F2F1;
+  --red-color: #B81010;
+}
+
+*{
+  font-family: 'Bebas Neue', cursive;
+}
+
+main{
+  background-color:var(--white-color);
+  height: 100vh;
+}

@@ -1,31 +1,38 @@
 nav{
   display: flex;
+  background-color: var(--purple-color);
+  height: 100px;
+  margin: 0;
+  padding: 0;
 }
-ul{
+
+
+.nav-bar{
+  color: white;
   display: flex;
-  flex-direction: row;
-  gap: 30px;
-  text-decoration: none;
+  gap: 50px;
+  margin: 0 60px 0 60px;
+  padding: 0;
+  font-size: 64px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
 }
 
-li{
+.nav-buttons{
+  display: flex;
+  gap: 150px;
+  color: white;
   list-style: none;
-  text-decoration: none;
-  color: black;
+  font-size: 48px;
 }
 
-
-a{
+.nav-buttons > li > a, .nav-bar > li{
+  color: white;
+  text-decoration: none;
   list-style: none;
-  text-decoration: none;
-  color: black;
-  border: 1px solid lightblue;
-  padding: 15px;
-  background-color: lightblue;
-  margin: 10px;
-  border-radius: 30px;
 }
 
-a:hover{
-  background-color: rgb(150, 172, 180);
+.logged-in{
+  gap: 100px;
 }
