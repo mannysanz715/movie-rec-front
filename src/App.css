@@ -12,6 +12,7 @@
 main{
   background-color:var(--white-color);
   height: 100vh;
+  padding-bottom: 60px;
 }
 
 ::-webkit-scrollbar {
@@ -19,6 +20,5 @@ main{
   background: transparent;  /* Optional: just make scrollbar invisible */}
   
   
-  .app{
-  }
+  
   
