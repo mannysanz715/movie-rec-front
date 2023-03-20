@@ -18,6 +18,7 @@ import * as authService from './services/authService'
 
 // styles
 import './App.css'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
@@ -34,7 +35,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className='app'>
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
@@ -63,7 +64,8 @@ const App = () => {
           }
         />
       </Routes>
-    </>
+      <Footer />
+    </div>
   )
 }
 
