@@ -1,30 +1,7 @@
 import * as movieService  from '../../services/movieService'
 import MovingShowing from '../../components/MovieShowing/MovieShowing'
+import './LandingLoggedIn.css'
 import { useState } from 'react'
-import Select from 'react-select'
-
-const options = [
-  {value: '27', label : "Horror"},
-{value: '28', label : "Action"},
-{value: '12', label : "Adventure"},
-{value: '16', label : "Annimation"},
-{value: '35', label : "Comedy"},    
-{value: '80', label : "Crime"},
-{value: '99', label : "Documentary"},
-{value: '18', label : "Drama"},
-{value: '10751', label : "Family"},
-{value: '14', label : "Fantasy"},
-{value: '36', label : "History"},
-{value: '10402', label : "Music"},
-{value: '9648', label : "Mystery"},
-{value: '10749', label : "Romance"},
-{value: '878', label : "Sci Fi"},
-{value: '10770', label : "TV Movie"},
-{value: '53', label : "Thriller"},
-{value: '10752', label : "War"},
-{value: '37', label : "Western"},
-]
-
 function LandingLoggedIn  ()  {
   const [movieRec, setMovieRec] = useState({})
   const [tempMovie, setTempMovie] = useState({
@@ -58,8 +35,8 @@ function LandingLoggedIn  ()  {
         <h5>Pick a genre</h5>
 
         <form id='movieId' onSubmit={handleMovieRequest}>
-          <select onChange={handleChange}name='movieId'>
-            <option value={null}>--Select a Genre--</option>
+          <select className='select-options' onChange={handleChange}name='movieId'>
+            <option value={null}>-Select a Genre-</option>
             <option value='27 Horror'>Horror</option>
             <option value='28 Action'>Action</option>
             <option value='12 Adventure'>Adventure</option>
@@ -80,7 +57,7 @@ function LandingLoggedIn  ()  {
             <option value='10752 War'>War</option>
             <option value='37 Western'>Western</option>
           </select>
-          <input type='submit' value='search'/>
+          <input className="select-options-button" type='submit' value='search'/>
         </form>
         <MovingShowing movie={movieRec}/>
     </>

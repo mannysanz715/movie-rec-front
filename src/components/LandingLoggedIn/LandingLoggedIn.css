@@ -1,0 +1,27 @@
+.select-options{
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 22px;
+}
+.select-options-button{
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  background-color: var(--green-color);
+  color: white;  
+}
+
+.select-options-button:hover{
+  background-color: rgb(37, 82, 37);
+}
+
+#movieId{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

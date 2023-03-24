@@ -2,5 +2,9 @@
   border-radius: 15px;
   border: 1px solid lightgray;
   box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+}
 
+.no-movie{
+  width: 300px;
+  height: 450px;
 }
