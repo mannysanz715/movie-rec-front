@@ -1,6 +1,6 @@
 import './MovieShowing.css'
 
-function MovieShowing({ movie, genre }){
+function MovieShowing({ movie }){
   return(
     <>
       {(movie.title && movie.poster_path) ? 
@@ -10,7 +10,6 @@ function MovieShowing({ movie, genre }){
         <img className="movie-image" src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={movie.title}></img> 
       </>
       : ''}
-      <h2>{genre}</h2>
       <p>{movie.overview}</p>
     </>
   )

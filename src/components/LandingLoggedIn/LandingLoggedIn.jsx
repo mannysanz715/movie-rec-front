@@ -30,8 +30,7 @@ function LandingLoggedIn  ()  {
   const [tempMovie, setTempMovie] = useState({
     genreId: '', genreName: ''
   })
-  const [genre, setGenre] = useState('')
-  
+
   function handleChange(e){
     e.preventDefault()
     const genreValues = e.target.value.split(' ')
@@ -83,7 +82,7 @@ function LandingLoggedIn  ()  {
           </select>
           <input type='submit' value='search'/>
         </form>
-        <MovingShowing movie={movieRec} genre={genre}/>
+        <MovingShowing movie={movieRec}/>
     </>
   );
 }

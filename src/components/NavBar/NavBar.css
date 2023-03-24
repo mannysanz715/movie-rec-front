@@ -21,7 +21,7 @@ nav{
 
 .nav-buttons{
   display: flex;
-  gap: 150px;
+  gap: 50px;
   color: white;
   list-style: none;
   font-size: 48px;
@@ -34,5 +34,11 @@ nav{
 }
 
 .logged-in{
-  gap: 100px;
+  gap: 50px;
+}
+
+.nav-bar > a, .nav-bar > a > li{
+  text-decoration: none;
+  color: white;
+  list-style: none;
 }

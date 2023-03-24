@@ -5,10 +5,10 @@ const NavBar = ({ user, handleLogout }) => {
     <nav>
       {user ?
         <ul className='nav-bar logged-in'>
-          <li> WHAT TO WATCH?</li>
+          <a href='/'><li> WHAT TO WATCH?</li></a>
           <div className='nav-buttons logged-in'>
 
-            <li><Link to="/change-password">G</Link></li>
+            <li><Link to="/change-password"><img src='/gear.png' alt='Change Password'></img></Link></li>
             <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
           </div>
         </ul>
