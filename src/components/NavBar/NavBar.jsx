@@ -8,7 +8,7 @@ const NavBar = ({ user, handleLogout }) => {
           <a href='/'><li> WHAT TO WATCH?</li></a>
           <div className='nav-buttons logged-in'>
 
-            <li><Link to="/change-password"><img src='/gear.png' alt='Change Password'></img></Link></li>
+            <li className='gear'><Link to="/change-password"><img src='/gear.png' alt='Change Password'></img></Link></li>
             <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
           </div>
         </ul>

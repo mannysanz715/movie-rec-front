@@ -31,8 +31,8 @@ function LandingLoggedIn  ()  {
   }
   return ( 
     <>
-      <h3>What do I watch tonight?</h3>
-        <h5>Pick a genre</h5>
+      <h1 className='page-title landing-title'>What do I watch tonight?</h1>
+        <h2>Pick a genre</h2>
 
         <form id='movieId' onSubmit={handleMovieRequest}>
           <select className='select-options' onChange={handleChange}name='movieId'>
